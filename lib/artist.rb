@@ -19,7 +19,7 @@ class Artist
   end
 
   def songs
-  Song.all.select{|song.include?|}
+  Song.all.select{|song.include?(song)|}
   end
 
   def self.song_count
