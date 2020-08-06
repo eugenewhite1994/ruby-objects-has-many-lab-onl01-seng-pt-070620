@@ -23,12 +23,12 @@ class Artist
   
   end
 
-  def self.song_count
-      song_count = 0 
-      song_count.each do |artist|
-        array = artist.songs 
-        
+   def self.song_count
+    song_count=0
+    @@all_artists.each do |artist|
+      array = artist.songs
+      song_count += array.length
+     end
+    song_count
   end
-
-
 end
