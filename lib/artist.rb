@@ -26,7 +26,8 @@ class Artist
   def self.song_count
       song_count = 0 
       song_count.each do |artist|
-        artist = 
+        array = artist.songs 
+        
   end
 
 
